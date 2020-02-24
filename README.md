@@ -16,7 +16,7 @@ $ pip install tensorflow
 
 ```
 
-Test
+Test install
 
 ```
 $ python
