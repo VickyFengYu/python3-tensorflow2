@@ -40,7 +40,3 @@ Type "help", "copyright", "credits" or "license" for more information.
 b'Hello, TensorFlow!'
 
 ```
-
-## <i class="icon-file"></i> Import Data Set
-
-[Download ml-latest-small.zip](https://grouplens.org/datasets/movielens/)
