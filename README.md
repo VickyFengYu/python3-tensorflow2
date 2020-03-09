@@ -43,6 +43,6 @@ b'Hello, TensorFlow!'
 
 ## <i class="icon-file"></i> RNN and CNN
 
-- [rnn](https://github.com/VickyFengYu/vickyfengyu.github.io/blob/master/python-tensorflow-rnn.md)
+- [RNN](https://github.com/VickyFengYu/vickyfengyu.github.io/blob/master/python-tensorflow-rnn.md)
 
-- [cnn](https://github.com/VickyFengYu/vickyfengyu.github.io/blob/master/python-tensorflow-cnn.md)
+- [CNN](https://github.com/VickyFengYu/vickyfengyu.github.io/blob/master/python-tensorflow-cnn.md)
