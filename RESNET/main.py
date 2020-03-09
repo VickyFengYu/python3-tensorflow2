@@ -1,6 +1,7 @@
 import os
-import tensorflow as tf
+
 import numpy as np
+import tensorflow as tf
 from tensorflow import keras
 
 # In[1]:
@@ -12,18 +13,35 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 assert tf.__version__.startswith('2.')
 
 (x_train, y_train), (x_test, y_test) = keras.datasets.fashion_mnist.load_data()
+print('******************************************')
+print('x_train:', x_train)
+print('******************************************')
+print('y_train:', y_train)
 x_train, x_test = x_train.astype(np.float32) / 255., x_test.astype(np.float32) / 255.
+print('******************************************')
+print('x_train.astype x_train:', x_train)
+print('******************************************')
+print('x_train.astype x_test:', x_test)
 # [b, 28, 28] => [b, 28, 28, 1]
 x_train, x_test = np.expand_dims(x_train, axis=3), np.expand_dims(x_test, axis=3)
+print('******************************************')
+print('np.expand_dims x_train:', x_train)
+print('******************************************')
+print('np.expand_dims x_test:', x_test)
 # one hot encode the labels. convert back to numpy as we cannot use a combination of numpy
 # and tensors as input to keras
 y_train_ohe = tf.one_hot(y_train, depth=10).numpy()
 y_test_ohe = tf.one_hot(y_test, depth=10).numpy()
+print('******************************************')
+print('y_train_ohe:', y_train_ohe)
+print('******************************************')
+print('y_test_ohe:', y_test_ohe)
 
 # In[2]:
 
-
+print('****************x_train.shape****y_train.shape*********************')
 print(x_train.shape, y_train.shape)
+print('****************x_test.shape****y_test.shape*********************')
 print(x_test.shape, y_test.shape)
 
 
